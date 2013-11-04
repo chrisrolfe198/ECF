@@ -1,0 +1,29 @@
+.width(@width: @full-width) {
+	width: @width;
+}
+
+// Padding
+// -------
+.lr-padding(@left: 5px, @right: 5px) {
+	padding-left: @left;
+	padding-right: @right;
+}
+
+.tb-padding( @top: 5px, @bottom: 5px ) {
+	padding-top: @top;
+	padding-bottom: @bottom;
+}
+
+.padding( @top: 5px, @bottom: 5px, @left: 5px, @right: 5px ) {
+	.tb-padding( @top, @bottom );
+	.lr-padding( @left, @right );
+}
+
+// Borders
+// -------
+.border-radius( @tl: 3px, @bl: 3px, @tr: 3px, @br: 3px ) {
+	border-top-left-radius: @tl;
+	border-bottom-left-radius: @bl;
+	border-top-right-radius: @tr;
+	border-bottom-right-radius: @br;
+}

@@ -1,0 +1,115 @@
+/* My variables redeclared to stop breaking the above */
+#body_style * {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-weight: 100;
+  vertical-align: top;
+}
+#body_style .body {
+  margin: 0 auto;
+}
+#body_style h1 {
+  font-size: 36px;
+}
+#body_style h2 {
+  font-size: 23px;
+}
+#body_style h3 {
+  font-size: 21px;
+}
+#body_style h4 {
+  font-size: 18px;
+}
+#body_style h5 {
+  font-size: 14px;
+}
+#body_style h6 {
+  font-size: 12px;
+}
+#body_style h1,
+#body_style h2,
+#body_style h3,
+#body_style h4,
+#body_style h5,
+#body_style h6,
+#body_style p,
+#body_style img {
+  padding: 5px;
+}
+#body_style p {
+  font-size: 14px;
+}
+#body_style ol,
+#body_style ul {
+  padding-left: 30px;
+  padding-right: 0;
+}
+#body_style ol li,
+#body_style ul li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#body_style img {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#body_style .section {
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-top: 5px;
+}
+#body_style .section tbody > tr > td > img {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#body_style .section tbody > tr:last-child > td {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+}
+#body_style .section .third {
+  width: 200px;
+}
+#body_style .section .half-width {
+  width: 300px;
+}
+#body_style .section .two-third {
+  width: 400px;
+}
+#body_style .section .two-third p,
+#body_style .section .two-third h1,
+#body_style .section .two-third h2,
+#body_style .section .two-third h3,
+#body_style .section .two-third h4,
+#body_style .section .two-third h5,
+#body_style .section .two-third h6 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#body_style .section .full-width {
+  width: 600px;
+}
+#body_style .spacing-row {
+  height: 5px;
+}
+#body_style .black-and-white {
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 5px;
+}
+#body_style .banner-image {
+  padding: 0;
+}
