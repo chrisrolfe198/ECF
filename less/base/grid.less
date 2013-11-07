@@ -1,0 +1,60 @@
+/*
+ *
+ *	New styles for the 'grid' system
+ *		1. Widths
+ *		2. Spacing
+ *
+ *****/
+
+/*
+ *	Widths
+ *****/
+
+// Full width of the email body 
+.full-width {
+	.width(@full-width);
+}
+
+// Width of the email body minus the padding
+.inner-width {
+	.width(@inner-width);
+}
+
+// Alternative options to create columns, this gives a third of the inner width
+.third {
+	.width(@third);
+}
+
+// Double a third
+.two-third {
+	.width(@two-thirds);
+	p, h1, h2, h3, h4, h5, h6 {
+		.lr-padding;
+	}
+}
+
+// Half of the inner width
+.half-width {
+	.width(@half-width);
+}
+
+/*
+ *	Spacing
+ *****/
+ // A small spacing row, add this class to a td
+ .spacing-row-small {
+ 	height: 5px;
+ }
+
+ .spacing-row-large {
+ 	height: 10px;
+ }
+
+ // Body padding
+ .tb-body-padding {
+ 	height: @body-padding;
+ }
+
+ .lr-body-padding {
+ 	width: @body-padding;
+ }

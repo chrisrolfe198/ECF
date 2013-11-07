@@ -1,8 +1,10 @@
 // Grid variables
 // ---------------------
-@full-width: 			  600px;
-@third: 				  (@full-width / 3);
-@half-width: 			  (@full-width / 2);
+@full-width: 			  596px;
+@body-padding: 			  15px;
+@inner-width: 			  @full-width - @body-padding;
+@third: 				  (@inner-width / 3);
+@half-width: 			  (@inner-width / 2);
 @two-thirds: 			  (@third * 2);
 
 // Font sizes and styles
@@ -12,7 +14,9 @@
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-color: 			  #FFF;
+
+@font-size-base:          16px; // ~default 14px
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -34,12 +38,7 @@
 @table-bg-hover:                     #f5f5f5;
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 #ddd; // table and cell border
+@table-border-color:                 #ddd; // table and cell border#
 
-/* My variables redeclared to stop breaking the above */
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 1.7); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.5); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+// Background colours
+@background-color: 					 #232020;
