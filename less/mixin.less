@@ -1,8 +1,10 @@
+// Widths
+// ------
 .width(@width: @full-width) {
 	width: @width;
 }
 
-// Padding
+// Padding - Use with caution not supported well in Outlook 2007 +
 // -------
 .lr-padding(@left: 5px, @right: 5px) {
 	padding-left: @left;
@@ -12,6 +14,17 @@
 .tb-padding( @top: 5px, @bottom: 5px ) {
 	padding-top: @top;
 	padding-bottom: @bottom;
+}
+
+
+// Table padding
+// -------------
+.lr-table-padding {
+	width: 15px;
+}
+
+.tb-table-padding {
+	height: 5px;
 }
 
 .padding( @top: 5px, @bottom: 5px, @left: 5px, @right: 5px ) {
