@@ -1,3 +1,6 @@
+// Reset
+// -----
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,12 +9,14 @@
 	vertical-align: top;
 }
 
+// Base styling
+// ------------
 .body {
 	/* Box model stuff */
-	width: @full-width;
+	.width();
 	margin: 0 auto;
 
-	/* text defaults */
+	/* colour defaults */
 	color: @font-color;
 	font-size: @font-size-base;
 	background-color: @background-color;
@@ -24,22 +29,36 @@ h4 { font-size: @font-size-h4; }
 h5 { font-size: @font-size-h5; }
 h6 { font-size: @font-size-h6; }
 
-h1, h2, h3, h4, h5, h6, p, img {
-	padding: 5px;
-}
-
 p {
 	font-size: @font-size-base;
 }
 
+img {
+	.border-radius;
+}
+
+// Forcing all elements to use the base font color
+h1, h2, h3, h4, h5, h6, p, td {
+	color: @font-color;
+}
+
+// Table Lists
+// -----------
+
+.ul-list {
+	tr td:first-child {
+		text-align: right;
+		width: 13px;
+	}
+}
+
+// HTML lists - Use at your own risk, not supported in Outlook 2007 +
+// ----------
 ol, ul {
+	color: @font-color;
 	.lr-padding( 30px, 0 );
 
 	li {
 		.tb-padding( 1px, 1px );
 	}
-}
-
-img {
-	.border-radius;
 }
