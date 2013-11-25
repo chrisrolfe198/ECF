@@ -16,20 +16,19 @@
 	padding-bottom: @bottom;
 }
 
-
-// Table padding
-// -------------
-.lr-table-padding {
-	width: 15px;
-}
-
-.tb-table-padding {
-	height: 5px;
-}
-
 .padding( @top: 5px, @bottom: 5px, @left: 5px, @right: 5px ) {
 	.tb-padding( @top, @bottom );
 	.lr-padding( @left, @right );
+}
+
+// Table padding
+// -------------
+.lr-spacing {
+	width: 15px;
+}
+
+.tb-spacing {
+	height: 5px;
 }
 
 // Borders
